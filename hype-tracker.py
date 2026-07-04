@@ -1,5 +1,7 @@
 import os
 import json
+import time
+import sys
 import xml.etree.ElementTree as ET
 import requests
 from datetime import datetime
@@ -17,9 +19,18 @@ if not api_key:
 client = genai.Client(api_key=api_key)
 STORAGE_FILE = "tracked_hype.json"
 
+def dramatic_pause(dots=5, delay=0.5):
+    for _ in range(dots):
+        print(".", end="", flush=True)
+        time.sleep(delay)
+    print() # Moves to the next line when done
+
 # 2. Fetch data stream
 def fetch_raw_data():
-    print("🔄 Fetching latest data stream...")
+    print()
+    print("🔄 Fetching latest data stream ", end="")
+    dramatic_pause(5, 0.7)
+    print()
     url = "https://news.ycombinator.com/rss"
     headers = {"User-Agent": "Mozilla/5.0"}
     response = requests.get(url, headers=headers)
@@ -39,7 +50,9 @@ def fetch_raw_data():
 
 # 3. Agent filtering and reasoning
 def analyze_with_agent(raw_items):
-    print("🤖 Agent analyzing current batch...")
+    print("🤖 Agent analyzing current batch ", end="")
+    dramatic_pause(5, 0.7)
+    print()
     
     system_instruction = (
         "You are an elite developer screening agent. Analyze the incoming text list. "

@@ -35,5 +35,11 @@
         "url": "https://github.com/searxng/searxng",
         "reason": "A software application (metasearch engine) known to be implemented in Python, involving automation.",
         "discovered_at": "2026-07-04 00:11:13"
+    },
+    {
+        "title": "David Beazley \u2013 Programming Courses",
+        "url": "https://www.dabeaz.com/courses.html",
+        "reason": "Offers programming courses, primarily focused on Python, which aligns with Python scripts.",
+        "discovered_at": "2026-07-04 00:23:05"
     }
 ]
