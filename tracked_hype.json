@@ -41,5 +41,23 @@
         "url": "https://www.dabeaz.com/courses.html",
         "reason": "Offers programming courses, primarily focused on Python, which aligns with Python scripts.",
         "discovered_at": "2026-07-04 00:23:05"
+    },
+    {
+        "title": "Reverse-engineering Codemasters' BIGF archive format in Ruby",
+        "url": "https://davidslv.uk/2026/06/30/reading-binary-in-ruby.html",
+        "reason": "This is a technical project involving reverse-engineering within the Ruby programming ecosystem.",
+        "discovered_at": "2026-07-04 00:53:41"
+    },
+    {
+        "title": "Show HN: A statically typed, cross-platform, easily bootstrappable build system",
+        "url": "https://github.com/rochus-keller/BUSY/",
+        "reason": "A build system is a fundamental developer tool for programming ecosystems.",
+        "discovered_at": "2026-07-04 00:53:41"
+    },
+    {
+        "title": "Hunting a 16-year-old SQLite WAL bug with TLA+",
+        "url": "https://ubuntu.com/blog/hunting-a-16-year-old-sqlite-bug-with-tla-is-dqlite-affected",
+        "reason": "TLA+ is a formal methods tool used for verification in programming, making this relevant to programming ecosystems and tools.",
+        "discovered_at": "2026-07-04 00:53:41"
     }
 ]
