@@ -2,6 +2,8 @@ import os
 import json
 import time
 import sys
+from datetime import datetime
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 import xml.etree.ElementTree as ET
 import requests
 from datetime import datetime
@@ -53,10 +55,11 @@ def fetch_raw_data():
     root = ET.fromstring(response.content)
     items = []
     for item in root.findall(".//item")[:30]: # Bumped to 30 to catch a wider net
-        items.append({
-            "title": item.find("title").text,
-            "url": item.find("link").text 
-        })
+        title_el = item.find("title")
+        link_el = item.find("link")
+        if title_el is None or link_el is None:
+            continue
+        items.append({"title": title_el.text, "url": link_el.text})
     return items
 
 # 3. Agent filtering and reasoning
@@ -133,9 +136,41 @@ def process_and_save_archive(new_discoveries):
     else:
         print("⏸️ Check complete. No fresh targets found in this stream interval.")
 
+def generate_html_dashboard(archive_data, output_dir="docs"):
+    print(f"🎨 Compiling HTML dashboard...")
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # 1. Sort the data
+    sorted_archive = sorted(archive_data, key=lambda x: x.get("discovered_at", ""), reverse=True)
+    
+    # 2. Set up Jinja2 to load templates from the current directory ('.')
+    # If you put your template in a folder named 'templates', change '.' to 'templates'
+    env = Environment(loader=FileSystemLoader('.'))
+    template = env.get_template('template.html')
+    
+    # 3. Render the HTML by passing your variables into the template
+    rendered_html = template.render(
+        sorted_archive=sorted_archive,
+        compiled_at=datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    )
+    
+    # 4. Save the file (Now safely outside the loop)
+    output_path = os.path.join(output_dir, "index.html")
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(rendered_html)
+        
+    print(f"✅ Dashboard written to {output_path}")
+
 # Main Pipeline Loop
 if __name__ == "__main__":
     current_stream = fetch_raw_data()
     if current_stream:
         agent_picks = analyze_with_agent(current_stream)
         process_and_save_archive(agent_picks)
+    
+    # Always regenerate the dashboard from current archive state,
+    # even on runs with zero new discoveries
+    if os.path.exists(STORAGE_FILE):
+        with open(STORAGE_FILE, "r") as f:
+            archive = json.load(f)
+        generate_html_dashboard(archive)

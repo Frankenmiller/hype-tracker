@@ -59,5 +59,23 @@
         "url": "https://ubuntu.com/blog/hunting-a-16-year-old-sqlite-bug-with-tla-is-dqlite-affected",
         "reason": "TLA+ is a formal methods tool used for verification in programming, making this relevant to programming ecosystems and tools.",
         "discovered_at": "2026-07-04 00:53:41"
+    },
+    {
+        "title": "2026 Unslop AI-Written Fiction Contest Results",
+        "url": "https://www.hyperstitionai.com/unslop-results",
+        "reason": "Mentions 'AI-Written', indicating a connection to AI and LLMs.",
+        "discovered_at": "2026-07-04 01:41:56"
+    },
+    {
+        "title": "Show HN: Classify mechanical faults using Contrastive Language-Audio Pretraining",
+        "url": "https://github.com/adam-s/car-diagnosis",
+        "reason": "Mentions 'Contrastive Language-Audio Pretraining', a specific machine learning technique for classification.",
+        "discovered_at": "2026-07-04 01:41:56"
+    },
+    {
+        "title": "Postgres data stored in Parquet on S3: LTAP architecture explained",
+        "url": "https://www.databricks.com/blog/lakebase-ltap-rethinking-database-storage",
+        "reason": "This article discusses data architecture (LTAP, Parquet, S3) which is fundamental for building robust machine learning pipelines and data processing.",
+        "discovered_at": "2026-07-04 02:24:12"
     }
 ]
