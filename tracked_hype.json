@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Leanstral 1.5: Proof abundance for all",
+        "url": "https://mistral.ai/news/leanstral-1-5/",
+        "reason": "The article is from Mistral AI, a leading AI company, indicating a strong relation to AI."
+    },
+    {
+        "title": "GLM5.2 on AMD MI355X at 2626 tok/s/node at over 2x lower cost than Blackwell",
+        "url": "https://www.wafer.ai/blog/glm52-amd",
+        "reason": "The title mentions GLM (likely a language model) and benchmarks related to AI hardware, indicating a strong connection to AI."
+    },
+    {
+        "title": "Steam Controller Auto-Charge \u2013 pilot to magnetic charging puck using CV",
+        "url": "https://github.com/FossPrime/Steam-Controller-Auto-Charge",
+        "reason": "The project involves 'Auto-Charge' and 'CV' (Computer Vision), which are directly related to automation and AI."
+    },
+    {
+        "title": "Jamesob's guide to running SOTA LLMs locally",
+        "url": "https://github.com/jamesob/local-llm",
+        "reason": "The title explicitly mentions 'SOTA LLMs,' directly relating to Artificial Intelligence."
+    },
+    {
+        "title": "New serious vulnerabilities spiked around release of Claude Mythos Preview",
+        "url": "https://epoch.ai/data-insights/cve-severity-spike",
+        "reason": "The article mentions 'Claude Mythos Preview,' referring to an AI model, thus directly relating to Artificial Intelligence."
+    },
+    {
+        "title": "Agentic coding notes from Galapagos Island",
+        "url": "https://danluu.com/ai-coding/#appendix-agentic-loops-and-writing-this-post",
+        "reason": "Explicitly discusses AI agents and agentic loops in coding, aligning with AI agents and automation logic.",
+        "discovered_at": "2026-07-04 00:11:13"
+    },
+    {
+        "title": "SearXNG: A free internet metasearch engine",
+        "url": "https://github.com/searxng/searxng",
+        "reason": "A software application (metasearch engine) known to be implemented in Python, involving automation.",
+        "discovered_at": "2026-07-04 00:11:13"
+    }
+]
