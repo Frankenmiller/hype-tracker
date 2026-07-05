@@ -175,5 +175,17 @@
         "url": "https://github.com/pIat0n/BareMetal-RAM-Dumper",
         "reason": "Describes an 'x86 tool' for bare-metal operations, fitting 'programming ecosystems' and 'developer tools'.",
         "discovered_at": "2026-07-04 20:56:55"
+    },
+    {
+        "title": "Potential session/cache leakage between workspace instances or consumer accounts",
+        "url": "https://github.com/anthropics/claude-code/issues/74066",
+        "reason": "Refers to \"claude-code\", indicating a project related to the Claude AI agent/LLM, and discusses a technical issue within it.",
+        "discovered_at": "2026-07-04 21:54:15"
+    },
+    {
+        "title": "What ORMs have taught me: just learn SQL (2014)",
+        "url": "https://wozniak.ca/blog/2014/08/03/1/index.html",
+        "reason": "Discusses \"ORMs\", which are developer tools relevant to programming ecosystems.",
+        "discovered_at": "2026-07-04 21:54:15"
     }
 ]

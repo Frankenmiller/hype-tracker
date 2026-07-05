@@ -8,10 +8,74 @@
 <body class="bg-black min-h-screen p-8">
     <div class="max-w-3xl mx-auto">
         <h1 class="text-3xl font-bold text-white mb-1">🤖 Hype Tracker</h1>
-        <p class="text-zinc-500 mb-8 font-mono text-sm">Last compiled: 2026-07-04 20:56:55</p>
-        <div class="grid gap-4">
+        <p class="text-zinc-500 mb-6 font-mono text-sm">Last compiled: 2026-07-04 21:54:15</p>
+        
+        <div class="mb-8">
+            <input type="text" id="searchInput" placeholder="Search titles, reasons, or categories..." 
+                   class="w-full px-4 py-3 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-100 placeholder-zinc-500 focus:outline-none focus:border-emerald-500 font-mono text-sm transition-colors">
+        </div>
+
+        <div class="grid gap-4" id="cardsGrid">
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="potential session/cache leakage between workspace instances or consumer accounts refers to "claude-code", indicating a project related to the claude ai agent/llm, and discusses a technical issue within it. "
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+                <div>
+                    <div class="flex items-start justify-between gap-4 mb-2">
+                        <a href="https://github.com/anthropics/claude-code/issues/74066" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
+                            Potential session/cache leakage between workspace instances or consumer accounts
+                        </a>
+                        
+                        <div class="flex items-center gap-2">
+                            <button onclick="navigator.clipboard.writeText('https://github.com/anthropics/claude-code/issues/74066'); alert('Copied link!');" 
+                                    class="p-1.5 rounded-md bg-zinc-800 text-zinc-400 hover:text-white hover:bg-zinc-700 transition-colors" 
+                                    title="Copy Link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+                                </svg>
+                            </button>
+
+                            
+                        </div>
+                    </div>
+                    
+                    <p class="text-sm text-zinc-400 mb-4">Refers to "claude-code", indicating a project related to the Claude AI agent/LLM, and discusses a technical issue within it.</p>
+                </div>
+                
+                <span class="text-xs text-emerald-500 font-mono">2026-07-04 21:54:15</span>
+            </div>
+            
+            <div id="tracker-card" 
+                 data-search="what orms have taught me: just learn sql (2014) discusses "orms", which are developer tools relevant to programming ecosystems. "
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+                <div>
+                    <div class="flex items-start justify-between gap-4 mb-2">
+                        <a href="https://wozniak.ca/blog/2014/08/03/1/index.html" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
+                            What ORMs have taught me: just learn SQL (2014)
+                        </a>
+                        
+                        <div class="flex items-center gap-2">
+                            <button onclick="navigator.clipboard.writeText('https://wozniak.ca/blog/2014/08/03/1/index.html'); alert('Copied link!');" 
+                                    class="p-1.5 rounded-md bg-zinc-800 text-zinc-400 hover:text-white hover:bg-zinc-700 transition-colors" 
+                                    title="Copy Link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+                                </svg>
+                            </button>
+
+                            
+                        </div>
+                    </div>
+                    
+                    <p class="text-sm text-zinc-400 mb-4">Discusses "ORMs", which are developer tools relevant to programming ecosystems.</p>
+                </div>
+                
+                <span class="text-xs text-emerald-500 font-mono">2026-07-04 21:54:15</span>
+            </div>
+            
+            <div id="tracker-card" 
+                 data-search="command and conquer generals natively ported to macos, iphone, ipad using fable mentions 'fable', implying a development tool or framework used for porting, fitting 'programming ecosystems' or 'developer tools'. "
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://github.com/ammaarreshi/Generals-Mac-iOS-iPad/tree/main" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -37,7 +101,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 20:56:55</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="explanation of everything you can see in htop/top on linux (2019) describes a fundamental linux system monitoring tool, relevant to 'programming ecosystems' and 'developer tools'. "
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://peteris.rocks/blog/htop/" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -63,7 +129,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 20:56:55</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="windows ce dreamcast community edition (wince-dc) involves operating system development and porting, relevant to 'programming ecosystems' and 'developer tools'. "
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://github.com/maximqaxd/wince-dc" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -89,7 +157,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 20:56:55</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="fable created novel 4d splat format mentions 'fable' creating a 'novel 4d splat format', indicating a technical development tool or framework within a 'programming ecosystem'. "
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://adamraudonis.github.io/splats4D/" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -115,7 +185,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 20:56:55</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="it's not me, it's the compiler refers to 'compiler' issues, which is a core component of 'programming ecosystems' and 'developer tools'. "
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://parsa.wtf/cast/" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -141,7 +213,10 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 20:56:55</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="baremetal ram dumper 
+ bare-metal x86 tool for cold boot attack experiments describes an 'x86 tool' for bare-metal operations, fitting 'programming ecosystems' and 'developer tools'. "
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://github.com/pIat0n/BareMetal-RAM-Dumper" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -168,7 +243,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 20:56:55</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="gpt-5.5 codex reasoning-token clustering may be leading to degraded performance directly related to llms (gpt-5.5 codex) and performance issues in ai models. "
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://github.com/openai/codex/issues/30364" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -194,7 +271,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 20:23:46</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="better models: worse tools discusses the relationship between models (likely ai/ml) and the tools used with them, relevant to programming ecosystems and ai/ml development. "
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -220,7 +299,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 20:23:46</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="zig: all package management functionality moved from compiler to build system relates to the tooling and ecosystem of the zig programming language. "
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://ziglang.org/devlog/2026/#2026-06-30" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -246,7 +327,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 20:23:46</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="drone autonomy crash course directly involves automation and potentially ai agents for drone control. "
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://www.cggonzalez.com/blog/index.html" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -272,7 +355,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 20:23:46</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="mapping with in-memory layers to reduce llm overload focuses on optimizing llm performance and architecture, directly relevant to llms and machine learning pipelines. "
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://ridgetext.com/blog/mapbox-llm-composition" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -298,7 +383,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 20:23:46</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="cloudslinker: move and sync files across 50 cloud services a tool for automation, specifically file synchronization across cloud services. "
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://app.cloudslinker.com/login" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -324,7 +411,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 20:23:46</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="my ai-built php engine in rust passes 17% of php-src tests, renders wordpress mentions 'ai-built' and 'rust' (a programming ecosystem), indicating a project related to ai and programming language development. "
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://ekinertac.com/blog/i-dont-know-rust-my-ai-is-rewriting-php-in-it/" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -350,7 +439,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 20:23:46</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="neural render proxies for interactive and differentiable lighting involves 'neural render', indicating the use of ai/ml in graphics and rendering. "
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://studios.disneyresearch.com/2026/07/01/neural-render-proxies-for-interactive-and-differentiable-lighting/" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -376,7 +467,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 20:23:46</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="postgres data stored in parquet on s3: ltap architecture explained this article discusses data architecture (ltap, parquet, s3) which is fundamental for building robust machine learning pipelines and data processing. ai"
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://www.databricks.com/blog/lakebase-ltap-rethinking-database-storage" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -406,7 +499,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 02:24:12</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="2026 unslop ai-written fiction contest results mentions 'ai-written', indicating a connection to ai and llms. ai"
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://www.hyperstitionai.com/unslop-results" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -436,7 +531,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 01:41:56</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="show hn: classify mechanical faults using contrastive language-audio pretraining mentions 'contrastive language-audio pretraining', a specific machine learning technique for classification. ai"
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://github.com/adam-s/car-diagnosis" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -466,7 +563,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 01:41:56</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="reverse-engineering codemasters' bigf archive format in ruby this is a technical project involving reverse-engineering within the ruby programming ecosystem. ai"
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://davidslv.uk/2026/06/30/reading-binary-in-ruby.html" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -496,7 +595,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 00:53:41</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="show hn: a statically typed, cross-platform, easily bootstrappable build system a build system is a fundamental developer tool for programming ecosystems. ai"
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://github.com/rochus-keller/BUSY/" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -526,7 +627,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 00:53:41</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="hunting a 16-year-old sqlite wal bug with tla+ tla+ is a formal methods tool used for verification in programming, making this relevant to programming ecosystems and tools. ai"
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://ubuntu.com/blog/hunting-a-16-year-old-sqlite-bug-with-tla-is-dqlite-affected" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -556,7 +659,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 00:53:41</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="david beazley – programming courses offers programming courses, primarily focused on python, which aligns with python scripts. ai"
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://www.dabeaz.com/courses.html" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -586,7 +691,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 00:23:05</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="agentic coding notes from galapagos island explicitly discusses ai agents and agentic loops in coding, aligning with ai agents and automation logic. ai"
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://danluu.com/ai-coding/#appendix-agentic-loops-and-writing-this-post" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -616,7 +723,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 00:11:13</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="searxng: a free internet metasearch engine a software application (metasearch engine) known to be implemented in python, involving automation. ai"
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://github.com/searxng/searxng" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -646,7 +755,9 @@
                 <span class="text-xs text-emerald-500 font-mono">2026-07-04 00:11:13</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="leanstral 1.5: proof abundance for all the article is from mistral ai, a leading ai company, indicating a strong relation to ai. ai"
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://mistral.ai/news/leanstral-1-5/" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -676,7 +787,9 @@
                 <span class="text-xs text-emerald-500 font-mono">Unknown</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="glm5.2 on amd mi355x at 2626 tok/s/node at over 2x lower cost than blackwell the title mentions glm (likely a language model) and benchmarks related to ai hardware, indicating a strong connection to ai. ai"
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://www.wafer.ai/blog/glm52-amd" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -706,7 +819,9 @@
                 <span class="text-xs text-emerald-500 font-mono">Unknown</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="steam controller auto-charge – pilot to magnetic charging puck using cv the project involves 'auto-charge' and 'cv' (computer vision), which are directly related to automation and ai. ai"
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://github.com/FossPrime/Steam-Controller-Auto-Charge" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -736,7 +851,9 @@
                 <span class="text-xs text-emerald-500 font-mono">Unknown</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="jamesob's guide to running sota llms locally the title explicitly mentions 'sota llms,' directly relating to artificial intelligence. ai"
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://github.com/jamesob/local-llm" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -766,7 +883,9 @@
                 <span class="text-xs text-emerald-500 font-mono">Unknown</span>
             </div>
             
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="new serious vulnerabilities spiked around release of claude mythos preview the article mentions 'claude mythos preview,' referring to an ai model, thus directly relating to artificial intelligence. ai"
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="https://epoch.ai/data-insights/cve-severity-spike" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -798,5 +917,6 @@
             
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

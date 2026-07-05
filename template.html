@@ -8,10 +8,18 @@
 <body class="bg-black min-h-screen p-8">
     <div class="max-w-3xl mx-auto">
         <h1 class="text-3xl font-bold text-white mb-1">🤖 Hype Tracker</h1>
-        <p class="text-zinc-500 mb-8 font-mono text-sm">Last compiled: {{ compiled_at }}</p>
-        <div class="grid gap-4">
+        <p class="text-zinc-500 mb-6 font-mono text-sm">Last compiled: {{ compiled_at }}</p>
+        
+        <div class="mb-8">
+            <input type="text" id="searchInput" placeholder="Search titles, reasons, or categories..." 
+                   class="w-full px-4 py-3 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-100 placeholder-zinc-500 focus:outline-none focus:border-emerald-500 font-mono text-sm transition-colors">
+        </div>
+
+        <div class="grid gap-4" id="cardsGrid">
             {% for item in sorted_archive %}
-            <div class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
+            <div id="tracker-card" 
+                 data-search="{{ (item.title ~ ' ' ~ item.reason ~ ' ' ~ item.category)|lower }}"
+                 class="relative bg-zinc-900 border border-zinc-800 rounded-xl p-5 hover:border-emerald-500/50 transition-colors group flex flex-col justify-between">
                 <div>
                     <div class="flex items-start justify-between gap-4 mb-2">
                         <a href="{{ item.url }}" target="_blank" class="text-lg font-semibold text-zinc-100 hover:text-emerald-400 hover:underline transition-colors decoration-2 underline-offset-4">
@@ -43,5 +51,6 @@
             {% endfor %}
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
