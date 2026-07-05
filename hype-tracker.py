@@ -68,7 +68,9 @@ def analyze_with_agent(raw_items): ##-------------------> analyze_with_agent
     dramatic_pause(5, 0.4)
     print()
     
-    print(f"DEBUG: Passing {len(raw_items)} items to Gemini.")
+    print(f"DEBUG: Passing {len(raw_items)} items to Gemini", end="")
+    dramatic_pause(5, 0.4)
+    print()
     
     system_instruction = (
         "You are an elite developer screening agent filtering a live Hacker News feed. "
@@ -94,12 +96,14 @@ def analyze_with_agent(raw_items): ##-------------------> analyze_with_agent
         )
         
         print(f"DEBUG: Raw Agent Response: {response.text}")
+        print()
         
         structured_data = json.loads(response.text)
         return structured_data.get("items", [])
         
     except Exception as e:
         print(f"❌ API or Parsing breakdown: {e}")
+        print()
         return []
 
 # 4. Load past state, cross-reference, and merge unique findings
@@ -133,11 +137,15 @@ def process_and_save_archive(new_discoveries):
         with open(STORAGE_FILE, "w") as f:
             json.dump(archive, f, indent=4)
         print(f"💾 Saved {added_count} brand new unique findings to permanent archive storage.")
+        print()
     else:
-        print("⏸️ Check complete. No fresh targets found in this stream interval.")
+        print("⏸️  Check complete. No fresh targets found in this stream interval.")
+        print()
 
 def generate_html_dashboard(archive_data, output_dir="docs"):
-    print(f"🎨 Compiling HTML dashboard...")
+    print(f"🎨 Compiling HTML dashboard", end="")
+    dramatic_pause(5, 0.4)    
+    print()
     os.makedirs(output_dir, exist_ok=True)
     
     # 1. Sort the data
@@ -160,6 +168,7 @@ def generate_html_dashboard(archive_data, output_dir="docs"):
         f.write(rendered_html)
         
     print(f"✅ Dashboard written to {output_path}")
+    print()
 
 # Main Pipeline Loop
 if __name__ == "__main__":

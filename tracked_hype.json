@@ -2,7 +2,7 @@
     {
         "title": "Leanstral 1.5: Proof abundance for all",
         "url": "https://mistral.ai/news/leanstral-1-5/",
-        "category": "AI",
+        "category": "DeFi",
         "reason": "The article is from Mistral AI, a leading AI company, indicating a strong relation to AI."
     },
     {
@@ -14,7 +14,7 @@
     {
         "title": "Steam Controller Auto-Charge \u2013 pilot to magnetic charging puck using CV",
         "url": "https://github.com/FossPrime/Steam-Controller-Auto-Charge",
-        "category": "AI",
+        "category": "Gaming",
         "reason": "The project involves 'Auto-Charge' and 'CV' (Computer Vision), which are directly related to automation and AI."
     },
     {
@@ -113,6 +113,7 @@
     {
         "title": "Drone Autonomy Crash Course",
         "url": "https://www.cggonzalez.com/blog/index.html",
+        "category": "Robotics",
         "reason": "Directly involves automation and potentially AI agents for drone control.",
         "discovered_at": "2026-07-04 20:23:46"
     },
@@ -143,6 +144,7 @@
     {
         "title": "Command and Conquer Generals natively ported to macOS, iPhone, iPad using Fable",
         "url": "https://github.com/ammaarreshi/Generals-Mac-iOS-iPad/tree/main",
+        "category": "Gaming",
         "reason": "Mentions 'Fable', implying a development tool or framework used for porting, fitting 'programming ecosystems' or 'developer tools'.",
         "discovered_at": "2026-07-04 20:56:55"
     },
@@ -161,6 +163,7 @@
     {
         "title": "Fable created novel 4D splat format",
         "url": "https://adamraudonis.github.io/splats4D/",
+        "category": "AI",
         "reason": "Mentions 'Fable' creating a 'novel 4D splat format', indicating a technical development tool or framework within a 'programming ecosystem'.",
         "discovered_at": "2026-07-04 20:56:55"
     },
@@ -185,7 +188,20 @@
     {
         "title": "What ORMs have taught me: just learn SQL (2014)",
         "url": "https://wozniak.ca/blog/2014/08/03/1/index.html",
+        "category": "AI",
         "reason": "Discusses \"ORMs\", which are developer tools relevant to programming ecosystems.",
         "discovered_at": "2026-07-04 21:54:15"
+    },
+    {
+        "title": "Drone Physics",
+        "url": "https://iahmed.me/post/drone-physics/",
+        "reason": "Provides foundational knowledge for drone development, which often involves automation and AI.",
+        "discovered_at": "2026-07-04 22:22:49"
+    },
+    {
+        "title": "Protocol Prying: Vulnerability Research in AirDrop and Quick Share",
+        "url": "https://arxiv.org/abs/2606.26967",
+        "reason": "Involves vulnerability research in communication protocols, which can be relevant to programmable automation and software ecosystems.",
+        "discovered_at": "2026-07-04 22:26:18"
     }
 ]
