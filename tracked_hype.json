@@ -2,80 +2,142 @@
     {
         "title": "Leanstral 1.5: Proof abundance for all",
         "url": "https://mistral.ai/news/leanstral-1-5/",
+        "category": "AI",
         "reason": "The article is from Mistral AI, a leading AI company, indicating a strong relation to AI."
     },
     {
         "title": "GLM5.2 on AMD MI355X at 2626 tok/s/node at over 2x lower cost than Blackwell",
         "url": "https://www.wafer.ai/blog/glm52-amd",
+        "category": "AI",
         "reason": "The title mentions GLM (likely a language model) and benchmarks related to AI hardware, indicating a strong connection to AI."
     },
     {
         "title": "Steam Controller Auto-Charge \u2013 pilot to magnetic charging puck using CV",
         "url": "https://github.com/FossPrime/Steam-Controller-Auto-Charge",
+        "category": "AI",
         "reason": "The project involves 'Auto-Charge' and 'CV' (Computer Vision), which are directly related to automation and AI."
     },
     {
         "title": "Jamesob's guide to running SOTA LLMs locally",
         "url": "https://github.com/jamesob/local-llm",
+        "category": "AI",
         "reason": "The title explicitly mentions 'SOTA LLMs,' directly relating to Artificial Intelligence."
     },
     {
         "title": "New serious vulnerabilities spiked around release of Claude Mythos Preview",
         "url": "https://epoch.ai/data-insights/cve-severity-spike",
+        "category": "AI",
         "reason": "The article mentions 'Claude Mythos Preview,' referring to an AI model, thus directly relating to Artificial Intelligence."
     },
     {
         "title": "Agentic coding notes from Galapagos Island",
         "url": "https://danluu.com/ai-coding/#appendix-agentic-loops-and-writing-this-post",
+        "category": "AI",
         "reason": "Explicitly discusses AI agents and agentic loops in coding, aligning with AI agents and automation logic.",
         "discovered_at": "2026-07-04 00:11:13"
     },
     {
         "title": "SearXNG: A free internet metasearch engine",
         "url": "https://github.com/searxng/searxng",
+        "category": "AI",
         "reason": "A software application (metasearch engine) known to be implemented in Python, involving automation.",
         "discovered_at": "2026-07-04 00:11:13"
     },
     {
         "title": "David Beazley \u2013 Programming Courses",
         "url": "https://www.dabeaz.com/courses.html",
+        "category": "AI",
         "reason": "Offers programming courses, primarily focused on Python, which aligns with Python scripts.",
         "discovered_at": "2026-07-04 00:23:05"
     },
     {
         "title": "Reverse-engineering Codemasters' BIGF archive format in Ruby",
         "url": "https://davidslv.uk/2026/06/30/reading-binary-in-ruby.html",
+        "category": "AI",
         "reason": "This is a technical project involving reverse-engineering within the Ruby programming ecosystem.",
         "discovered_at": "2026-07-04 00:53:41"
     },
     {
         "title": "Show HN: A statically typed, cross-platform, easily bootstrappable build system",
         "url": "https://github.com/rochus-keller/BUSY/",
+        "category": "AI",
         "reason": "A build system is a fundamental developer tool for programming ecosystems.",
         "discovered_at": "2026-07-04 00:53:41"
     },
     {
         "title": "Hunting a 16-year-old SQLite WAL bug with TLA+",
         "url": "https://ubuntu.com/blog/hunting-a-16-year-old-sqlite-bug-with-tla-is-dqlite-affected",
+        "category": "AI",
         "reason": "TLA+ is a formal methods tool used for verification in programming, making this relevant to programming ecosystems and tools.",
         "discovered_at": "2026-07-04 00:53:41"
     },
     {
         "title": "2026 Unslop AI-Written Fiction Contest Results",
         "url": "https://www.hyperstitionai.com/unslop-results",
+        "category": "AI",
         "reason": "Mentions 'AI-Written', indicating a connection to AI and LLMs.",
         "discovered_at": "2026-07-04 01:41:56"
     },
     {
         "title": "Show HN: Classify mechanical faults using Contrastive Language-Audio Pretraining",
         "url": "https://github.com/adam-s/car-diagnosis",
+        "category": "AI",
         "reason": "Mentions 'Contrastive Language-Audio Pretraining', a specific machine learning technique for classification.",
         "discovered_at": "2026-07-04 01:41:56"
     },
     {
         "title": "Postgres data stored in Parquet on S3: LTAP architecture explained",
         "url": "https://www.databricks.com/blog/lakebase-ltap-rethinking-database-storage",
+        "category": "AI",
         "reason": "This article discusses data architecture (LTAP, Parquet, S3) which is fundamental for building robust machine learning pipelines and data processing.",
         "discovered_at": "2026-07-04 02:24:12"
+    },
+    {
+        "title": "GPT-5.5 Codex reasoning-token clustering may be leading to degraded performance",
+        "url": "https://github.com/openai/codex/issues/30364",
+        "reason": "Directly related to LLMs (GPT-5.5 Codex) and performance issues in AI models.",
+        "discovered_at": "2026-07-04 20:23:46"
+    },
+    {
+        "title": "Better Models: Worse Tools",
+        "url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+        "reason": "Discusses the relationship between models (likely AI/ML) and the tools used with them, relevant to programming ecosystems and AI/ML development.",
+        "discovered_at": "2026-07-04 20:23:46"
+    },
+    {
+        "title": "Zig: All Package Management Functionality Moved from Compiler to Build System",
+        "url": "https://ziglang.org/devlog/2026/#2026-06-30",
+        "reason": "Relates to the tooling and ecosystem of the Zig programming language.",
+        "discovered_at": "2026-07-04 20:23:46"
+    },
+    {
+        "title": "Drone Autonomy Crash Course",
+        "url": "https://www.cggonzalez.com/blog/index.html",
+        "reason": "Directly involves automation and potentially AI agents for drone control.",
+        "discovered_at": "2026-07-04 20:23:46"
+    },
+    {
+        "title": "Mapping with In-Memory Layers to Reduce LLM Overload",
+        "url": "https://ridgetext.com/blog/mapbox-llm-composition",
+        "reason": "Focuses on optimizing LLM performance and architecture, directly relevant to LLMs and machine learning pipelines.",
+        "discovered_at": "2026-07-04 20:23:46"
+    },
+    {
+        "title": "CloudsLinker: Move and sync files across 50 cloud services",
+        "url": "https://app.cloudslinker.com/login",
+        "reason": "A tool for automation, specifically file synchronization across cloud services.",
+        "discovered_at": "2026-07-04 20:23:46"
+    },
+    {
+        "title": "My AI-built PHP engine in Rust passes 17% of PHP-src tests, renders WordPress",
+        "url": "https://ekinertac.com/blog/i-dont-know-rust-my-ai-is-rewriting-php-in-it/",
+        "reason": "Mentions 'AI-built' and 'Rust' (a programming ecosystem), indicating a project related to AI and programming language development.",
+        "discovered_at": "2026-07-04 20:23:46"
+    },
+    {
+        "title": "Neural Render Proxies for Interactive and Differentiable Lighting",
+        "url": "https://studios.disneyresearch.com/2026/07/01/neural-render-proxies-for-interactive-and-differentiable-lighting/",
+        "reason": "Involves 'Neural Render', indicating the use of AI/ML in graphics and rendering.",
+        "discovered_at": "2026-07-04 20:23:46"
     }
 ]
