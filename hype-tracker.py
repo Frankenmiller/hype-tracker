@@ -63,7 +63,7 @@ def fetch_raw_data():
     return items
 
 # 3. Agent filtering and reasoning
-def analyze_with_agent(raw_items):
+def analyze_with_agent(raw_items): ##-------------------> analyze_with_agent
     print("🤖 Agent analyzing current batch ", end="")
     dramatic_pause(5, 0.4)
     print()
