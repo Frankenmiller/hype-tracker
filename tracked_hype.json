@@ -203,5 +203,23 @@
         "url": "https://arxiv.org/abs/2606.26967",
         "reason": "Involves vulnerability research in communication protocols, which can be relevant to programmable automation and software ecosystems.",
         "discovered_at": "2026-07-04 22:26:18"
+    },
+    {
+        "title": "Mouse: Precision Editing Tools for AI Coding Agents",
+        "url": "https://hic-ai.com",
+        "reason": "Explicitly mentions 'AI Coding Agents' and 'Tools', directly relevant to AI agents and developer tools.",
+        "discovered_at": "2026-07-05 00:02:37"
+    },
+    {
+        "title": "The Log Is the Agent",
+        "url": "https://arxiv.org/abs/2605.21997",
+        "reason": "Explicitly mentions 'Agent', suggesting a topic related to AI agents or automation.",
+        "discovered_at": "2026-07-05 00:02:37"
+    },
+    {
+        "title": "Backon \n Python retry (zero deps, circuit breaker, async native)",
+        "url": "https://github.com/Llucs/backon",
+        "reason": "Explicitly mentions 'Python' and describes a 'retry' library, which is a developer tool/library within the Python programming ecosystem.",
+        "discovered_at": "2026-07-05 00:02:37"
     }
 ]
