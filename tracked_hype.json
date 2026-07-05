@@ -221,5 +221,53 @@
         "url": "https://github.com/Llucs/backon",
         "reason": "Explicitly mentions 'Python' and describes a 'retry' library, which is a developer tool/library within the Python programming ecosystem.",
         "discovered_at": "2026-07-05 00:02:37"
+    },
+    {
+        "title": "Introduction to Compilers and Language Design",
+        "url": "https://dthain.github.io/books/compiler/",
+        "reason": "Relates to programming ecosystems, specifically compilers and language design.",
+        "discovered_at": "2026-07-05 07:34:32"
+    },
+    {
+        "title": "Show HN: KiCad in the Browser",
+        "url": "https://demo.pcbjam.com/",
+        "reason": "A developer tool (KiCad) presented as a web-based application, fitting into the 'programming ecosystems' category.",
+        "discovered_at": "2026-07-05 07:34:32"
+    },
+    {
+        "title": "Claude Design System Prompt",
+        "url": "https://github.com/Trystan-SA/claude-design-system-prompt",
+        "reason": "Mentions 'Claude', an LLM, and 'Design System Prompt', indicating a tool or methodology for LLMs/AI agents.",
+        "discovered_at": "2026-07-05 07:34:32"
+    },
+    {
+        "title": "Trust your compiler: Modern C++",
+        "url": "https://categorica.io/blog/2026.06.29_trust_your_compiler/",
+        "reason": "Discusses compilers and modern C++, relevant to programming ecosystems.",
+        "discovered_at": "2026-07-05 07:34:32"
+    },
+    {
+        "title": "Pandoc Lua Filters",
+        "url": "https://pandoc.org/lua-filters.html",
+        "reason": "Describes programmable filters for Pandoc using Lua, relevant to automation and programming ecosystems.",
+        "discovered_at": "2026-07-05 07:34:32"
+    },
+    {
+        "title": "Functional Programming in hica",
+        "url": "https://www.hica.dev/docs/functional-programming/",
+        "reason": "Discusses a programming paradigm ('Functional Programming') within a specific language or framework ('hica'), relevant to programming ecosystems.",
+        "discovered_at": "2026-07-05 07:34:32"
+    },
+    {
+        "title": "Shadcn/UI now defaults to Base UI instead of Radix",
+        "url": "https://ui.shadcn.com/docs/changelog",
+        "reason": "Discusses a change in a UI framework/library, relevant to programming ecosystems and developer tools.",
+        "discovered_at": "2026-07-05 08:40:40"
+    },
+    {
+        "title": "Spain's cadastre API is SOAP from 2003, so I built a JSON wrapper (+MCP)",
+        "url": "https://prediohq.com/",
+        "reason": "Involves building an API wrapper, which is a form of developer tool and automation.",
+        "discovered_at": "2026-07-05 08:40:40"
     }
 ]

@@ -1,49 +1,49 @@
 :root {
-        /* Sourcing the noise texture directly from the asset repository */
-        --glitter: url("https://assets.codepen.io/13471/silver-glitter-background.png");
-    }
+    /* Sourcing the noise texture directly from the asset repository */
+    --glitter: url("https://assets.codepen.io/13471/silver-glitter-background.png");
+}
 
-    .viewport-fire {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 180px;         /* 3x the height for a massive burn zone */
-            pointer-events: none;  /* Keep it click-through */
-            z-index: 9999;
-            overflow: hidden;
-            opacity: 0.45;         /* Slight balance adjustment for the larger area */
-            background-color: transparent;
-        }
+.viewport-fire {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;         /* 3x the height for a massive burn zone */
+    pointer-events: none;  /* Keep it click-through */
+    z-index: 1;
+    overflow: hidden;
+    opacity: 0.45;         /* Slight balance adjustment for the larger area */
+    background-color: transparent;
+}
 
-    .viewport-fire::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background-image: var(--glitter), var(--glitter),
-            linear-gradient(
-                0deg,
-                white 0px,
-                #ff8951 8px,
-                #dcbc169c 40%,
-                transparent 100%
-            ),
-            radial-gradient(ellipse at bottom, transparent 40%, black 80%);
-        background-size: 350px 500px, 400px 650px, 100% 100%, 100% 100%;
-        background-blend-mode: hard-light, color-dodge, multiply;
-        background-repeat: repeat, repeat, repeat, no-repeat;
-        mix-blend-mode: color-dodge;
-        
-        /* High contrast filters that turn the raw texture into photorealistic fire */
-        filter: brightness(3.5) blur(4px) contrast(6);
-        animation: fire-texture-scroll 1.75s linear infinite;
-    }
+.viewport-fire::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: var(--glitter), var(--glitter),
+        linear-gradient(
+            0deg,
+            white 0px,
+            #ff8951 8px,
+            #dcbc169c 40%,
+            transparent 100%
+        ),
+        radial-gradient(ellipse at bottom, transparent 40%, black 80%);
+    background-size: 350px 500px, 400px 650px, 100% 100%, 100% 100%;
+    background-blend-mode: hard-light, color-dodge, multiply;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    mix-blend-mode: color-dodge;
+    
+    /* High contrast filters that turn the raw texture into photorealistic fire */
+    filter: brightness(3.5) blur(4px) contrast(6);
+    animation: fire-texture-scroll 1.75s linear infinite;
+}
 
-    @keyframes fire-texture-scroll {
-        0% {
-            background-position: center 0px, center 0px, 50% 100%, center center;
-        }
-        100% {
-            background-position: center -500px, center -650px, 50% 100%, center center;
-        }
+@keyframes fire-texture-scroll {
+    0% {
+        background-position: center 0px, center 0px, 50% 100%, center center;
     }
+    100% {
+        background-position: center -500px, center -650px, 50% 100%, center center;
+    }
+}
