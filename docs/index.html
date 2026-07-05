@@ -276,9 +276,11 @@
         </div>
     </div>
 
+    <canvas id="ash-canvas"></canvas>
+
     <div class="max-w-3xl mx-auto">
         <h1 class="text-3xl font-bold text-white mb-1">🤖 Hype Tracker 🤖</h1>
-        <p class="text-zinc-500 mb-6 font-mono text-sm">Last compiled: 2026-07-05 09:20:10</p>
+        <p class="text-zinc-500 mb-6 font-mono text-sm">Last compiled: 2026-07-05 09:36:03</p>
         
         <div class="mb-8">
             <input type="text" id="searchInput" placeholder="Search titles, reasons, or categories..." 
@@ -3084,6 +3086,97 @@
                 }, animationTime * 1000 - 500);
             });
         })();
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const canvas = document.getElementById('ash-canvas');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+
+        // Set explicit resolution to match screen layout
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        const particles = [];
+        const maxParticles = 60; // Adjust this number to make the ash thicker or thinner
+
+        class AshParticle {
+            constructor() {
+                this.reset(true);
+            }
+
+            reset(init = false) {
+                this.x = Math.random() * canvas.width;
+                this.y = init ? Math.random() * canvas.height : canvas.height + 20;
+                
+                // 🔬 SIZE CALIBRATION: Removed the large chunks, keeping flakes tight and small
+                this.size = Math.random() * 1.8 + 0.8; 
+                
+                this.speedY = -(Math.random() * 2.5 + 1.2); 
+                this.speedX = Math.random() * 1.0 - 0.5; 
+                
+                // 🎨 COLOR CALIBRATION: Turned off the red entirely
+                const tones = [
+                    `rgba(247, 181, 35, ${Math.random() * 0.7 + 0.3})`,  // Bright Flame Orange
+                    `rgba(247, 181, 35, ${Math.random() * 0.5 + 0.2})`,  // Fainter Orange for depth
+                    `rgba(255, 255, 255, ${Math.random() * 0.2 + 0.1})`, // Light white ash fleck
+                    `rgba(50, 50, 50, ${Math.random() * 0.4 + 0.2})`     // Dark background ash
+                ];
+                
+                this.color = tones[Math.floor(Math.random() * tones.length)];
+                this.wobble = Math.random() * Math.PI;
+                this.wobbleSpeed = Math.random() * 0.04 + 0.02; 
+            }
+
+            update() {
+                this.y += this.speedY;
+                this.x += this.speedX + Math.sin(this.wobble) * 0.4;
+                this.wobble += this.wobbleSpeed;
+
+                if (this.y < -20 || this.x < -20 || this.x > canvas.width + 20) {
+                    this.reset(false);
+                }
+            }
+
+            draw() {
+                ctx.fillStyle = this.color;
+                
+                // Glow effect only applies to the flame orange particles
+                if (this.color.includes('247')) {
+                    ctx.shadowBlur = 4;
+                    ctx.shadowColor = this.color;
+                } else {
+                    ctx.shadowBlur = 0;
+                }
+
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        // Initialize particle array
+        for (let i = 0; i < maxParticles; i++) {
+            particles.push(new AshParticle());
+        }
+
+        // Main Animation Loop
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            
+            requestAnimationFrame(animate);
+        }
+        animate();
+    });
     </script>
     <script src="script.js"></script>
 </body>
